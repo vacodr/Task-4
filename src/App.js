@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Cad from './Component/Cad';
+import Performance from './Component/Performance';
+import Profile from './Component/Profile';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <div className="col">
+        <Profile/>
+        </div>
+        <div className="col">
+          <Performance/>
+        </div>
+
+      </div>
+      <div className="row p-5">
+      <Cad/> 
+      </div>
+      
     </div>
   );
 }
